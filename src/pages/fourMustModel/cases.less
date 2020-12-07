@@ -5,25 +5,49 @@
   height: 100%;
   .imgImport('~@/assets/fourMustmodel/1/background.png');
   color: aliceblue;
-  padding-top: 83px;
+  padding-top: 1.66rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   header {
     h2 {
       color: #2EFFFF;
+      font-size: .5rem;
+      line-height: .5rem;
+      margin-bottom: .34rem;
+      // font-family: AliHYAiHei;
     }
+    // 自定义的input栏的样式，后期应该会用antd的input组件
     input {
+      display: inline-block;
       background: #102445;
+      width: 3.18rem;
+      height: .43rem;
       margin-left: -20px;
       padding: 4px 0 4px 20px;
+      vertical-align: middle;
       color: #9EA6AF;
       border: 1px solid #00FFFF;
+      + div{
+        display: inline-block;
+        width: .43rem;
+        height: .43rem;
+        border: 1px solid #00FFFF;
+        border-left: none;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        img {
+          width: .2rem;
+          height: .22rem;
+        }
+      }
     }
+    
     
   }
   main{
-    margin-top: 90px;
+    margin-top: 1.87rem;
     position: relative;
     .absoluteBox {
       position: absolute;
@@ -31,18 +55,44 @@
       height: 20px;
       left: -260px;
       top: 50px;
-      // right: 100px;
+      cursor: pointer;
       img {
         width: 100%;
       }
     }
     .mainBox{
       display: flex;
+      section{
+        :last-child {
+          margin-top: .12rem;
+          text-align: center;
+        }
+        + section {
+          margin-left: .85rem;
+        }
+        img {
+          width: 2rem;
+          height: 1.4rem;
+          border: @imgBorder;
+        }
+      }
+      
     }
   };
   footer{
-    margin-top: 150px;
+    margin-top: 1.65rem;
     display: flex;
+    justify-content: space-around;
+    div{
+      height: .7rem;
+      border: @imgBorder;
+      + div {
+        margin-left: .77rem;
+      }
+      > img {
+        height: calc(100% - 2px);
+      }
+    }
   }
 }
 

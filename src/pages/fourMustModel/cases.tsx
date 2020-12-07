@@ -14,15 +14,19 @@ const fourMustModel: FC<PageProps> =(props) =>{
   return(
     <div className={styles.fourMustModelWrapper}>
       <header>
-        <h2 className={styles.title}>案件相关模型</h2>
+        <h2>案件相关模型</h2>
         <div>
           <input type="text" placeholder="请输入模型名称" />
+          <div>
+            <img src={require('@/assets/fourMustModel/search.png')} alt=""/>
+          </div>
+          
         </div>
       </header>
       <main>  
         <div className={styles.mainBox}>
           <div className={styles.absoluteBox}>
-          <img src={require("@/assets/fourMustmodel/1/arrowLeft.png")}/>
+            <img src={require("@/assets/fourMustmodel/1/arrowLeft.png")}/>
           </div>
           <section>
             <div>
