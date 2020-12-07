@@ -51,7 +51,17 @@ const router = [
       },
       { 
         path: '/fourMustModel', 
-        component: '@/pages/fourMustModel', 
+        component: '@/pages/fourMustModel/cases',
+        exact: true 
+      },
+      { 
+        path: '/people', 
+        component: '@/pages/fourMustModel/people', 
+        exact: true 
+      },
+      { 
+        path: '/portrait', 
+        component: '@/pages/fourMustModel/portrait', 
         exact: true 
       },
       { 

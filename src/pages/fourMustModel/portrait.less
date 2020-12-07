@@ -1,0 +1,87 @@
+@import '~@/less/variable.less';
+
+.fourMustModelWrapper{
+  width: 100%;
+  height: 100%;
+  .imgImport('~@/assets/fourMustmodel/1/background.png');
+  color: aliceblue;
+  padding-top: 83px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .container {
+    width: 1803px;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    .imgImport('~@/assets/fourMustmodel/3/border.png');
+    aside {
+      width: 240px;
+      text-align: center;
+      h1 {
+        color: #2EFFFF;
+      }
+      input {
+        background: #102445;
+        margin-left: -20px;
+        padding: 4px 0 4px 20px;
+        color: #9EA6AF;
+        border: 1px solid #00FFFF;
+      }
+      .figure > img {
+        width: 239.5px;
+        border: @imgBorder;
+      }
+      button {
+        background-color: #009999;
+      }
+    }
+    main {
+      .article1 {
+        .imgImport('~@/assets/fourMustmodel/3/title1.png');
+      }
+      .article2 {
+        .imgImport('~@/assets/fourMustmodel/3/title2.png');
+      }
+      .article3 {
+        .imgImport('~@/assets/fourMustmodel/3/title3.png');
+      }
+      .article4 {
+        .imgImport('~@/assets/fourMustmodel/3/title4.png');
+      }
+      article {
+        width: 1002px;
+        height: 100px;
+        box-sizing: border-box;
+        border: @imgBorder;
+        margin-top: 10px;
+        .showBox {
+          padding-top: 50px;
+          display: flex;
+          div {
+            margin: 0 30px 0 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.processWrapper{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  .childPages{
+    float: left;
+    width: 93%;
+    height: 100%;
+    position: relative;
+    .childPageContainer{
+      position: absolute;
+      width: 96%;
+      height: 90%;
+      bottom: 2%;
+      right: 2%;
+    }
+  }
+}

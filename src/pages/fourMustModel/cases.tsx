@@ -1,7 +1,7 @@
 import  React,{ useState, FC, useEffect } from 'react';
 import { ConnectProps, connect, useHistory } from 'umi';
 import { CommonModelState } from '../../models/common';
-import styles from './index.less';
+import styles from './cases.less';
 import fourMustProcess from '../fourMustProcess';
 
 
