@@ -1,7 +1,7 @@
 import  React,{ useState, FC, useEffect } from 'react';
 import { ConnectProps, connect, useHistory } from 'umi';
 import { CommonModelState } from '../../models/common';
-import styles from './people.less';
+import styles from './cases.less';
 import { Input } from 'antd';
 import fourMustProcess from '../fourMustProcess';
 
@@ -16,18 +16,13 @@ const fourMustModel: FC<PageProps> =(props) =>{
   return(
     <div className={styles.fourMustModelWrapper}>
       <header>
-        <h2 className={styles.title}>人员相关模型</h2>
+        <h2>人员相关模型</h2>
         <div>
           <Search placeholder="请输入模型名称" enterButton/>
-          <input type="text" placeholder="请输入模型名称" />
         </div>
       </header>
-      <main>  
+      <main>
         <div className={styles.mainBox}>
-          <div className={styles.absoluteBox}>
-            <img src={require("@/assets/fourMustmodel/2/arrowRight.png")}/>
-          </div>
-
           <section>
             <div>
               <img src={require("@/assets/fourMustmodel/2/1.png")}/>
@@ -52,6 +47,9 @@ const fourMustModel: FC<PageProps> =(props) =>{
             </div>
             <div>境外赌博模型</div>
           </section>
+        </div>
+        
+        <div className={styles.mainBox}>
           <section>
             <div>
               <img src={require("@/assets/fourMustmodel/2/5.png")}/>
@@ -76,6 +74,9 @@ const fourMustModel: FC<PageProps> =(props) =>{
             </div>
             <div>关注人员人脸管控模型</div>
           </section>
+        </div>
+        <div className={`${styles.absoluteBox} ${styles.right}`}>
+          <img src={require("@/assets/fourMustmodel/2/arrowRight.png")}/>
         </div>
       </main>
       <footer>
