@@ -1,0 +1,59 @@
+@import '../../less/variable.less';
+
+.fourMustProcessWrapper{
+  width: 100%;
+  height: 100%;
+  .imgImport('../assets/fourMustProcess/background.png');
+  position: relative;
+  .title{
+    .positionStyle(100%,2.5rem,50%,47%);
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    color: @fontColor;
+  }
+  .titleIcon{
+    .positionStyle(21%,37.6%,49.2%,28%);
+    .imgImport('../assets/fourMustProcess/policeIcon.png');
+  }
+  .centerBackground{
+    width: 25%;
+    height: 50.37%;
+    .imgImport('../assets/fourMustProcess/circulRing.png');
+    position: absolute;
+    bottom: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .navWrapper{
+    width: 85%;
+    height: 37.6%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    position: absolute;
+    bottom: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    .navItem{
+      width: 25%;
+      height: 100%;
+      display: block;
+      cursor: pointer;
+    }
+    .arrowWrapper{
+      .positionStyle(53%,1.9rem,50%);
+      z-index: 999;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      .douleArrow{
+        width: 1.85rem;
+        height: 100%;
+        .imgImport('../assets/fourMustProcess/doubleArrow.png')
+      }
+    }
+  }
+  
+}

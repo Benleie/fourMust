@@ -1,0 +1,79 @@
+@import '../../less/variable.less';
+
+.processNavigation{
+  width: 7%;
+  height: 100%;
+  position: relative;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .imgImport('../assets/fourMustProcess/navBackground.png');
+  .navWrapper{
+    width: 100%;
+    height: 66.6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .itemSelect{
+      width: 100%;
+      height: 16.7%;
+      position: relative;
+      .title{
+        width: 100%;
+        height: 25%;
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        justify-content: center;
+        color: @fontColor;
+        font-size: 1rem;
+      }
+      .iconWrapper{
+        width: 100%;
+        height: 66.6%;
+        position: absolute;
+        bottom: 25%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        // background-color: pink;
+      }
+      .selectArrow{
+        width: 0.75rem;
+        height: 0.75rem;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        .imgImport('../assets/fourMustProcess/selectArrow.png');
+      }
+    }
+    .itemNoSelect{
+      width: 100%;
+      height: 16.7%;
+      position: relative;
+      .title{
+        width: 100%;
+        height: 25%;
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        justify-content: center;
+        color: @fontColor;
+        font-size: 1rem;
+      }
+      .iconWrapper{
+        width: 100%;
+        height: 66.6%;
+        position: absolute;
+        bottom: 25%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        // background-color: pink;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@commonColor: #172145;
+@fontColor: #2EFFFF;
+// 四必模型等页面的图片边框
+@imgBorder: 1px dashed #9EA6AF;
+
+.positionStyle(@width,@heigh,@left:50%,@top:50%){
+  top: @top;
+  left: @left;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  width: @width;
+  height: @heigh;
+}
+
+.fontStyle(@lineH,@color:@fontColor,@fontS:.16rem,@pos:center){
+  text-align: @pos;
+  line-height: @lineH;
+  font-size: @fontS;
+  color: @color;
+}
+
+.imgImport(@url,@size:100% 100%){
+  background-image: url(@url);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: @size;
+}
+
+.scrollStyle(@width){
+  &::-webkit-scrollbar{
+    width: @width;
+  }
+  &::-webkit-scrollbar-thumb{
+    border-radius: 3px;
+    height: .2rem;
+    box-shadow: inset 0 0 5px rgba(0,255,255,0.8);
+    background-color: #00ffff;
+  }
+  &::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px rgba(0,255,255,0.3);
+    border-radius: 0;
+    background-color: rgba(0,255,255,0.3);
+  }
+}
