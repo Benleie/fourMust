@@ -1,7 +1,6 @@
 @commonColor: #172145;
 @fontColor: #2EFFFF;
-// 四必模型等页面的图片边框
-@imgBorder: 1px dashed #9EA6AF;
+@borderColor: #095686;
 
 .positionStyle(@width,@heigh,@left:50%,@top:50%){
   top: @top;
@@ -24,6 +23,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: @size;
+}
+.borderStyle() {
+  border: 1px solid;
+  border-color: @borderColor;
+  border-radius: 2px;
 }
 
 .scrollStyle(@width){

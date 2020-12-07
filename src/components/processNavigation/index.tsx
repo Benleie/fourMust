@@ -12,7 +12,7 @@ const navigationList = [
 const processNavigation: FC = () => {
   const history = useHistory()
   const [selectItem, setSelectItem] = useState(1);
-  
+
   const navigation = (id: number) => {
     if (id===1) {
       history.push('/fourMustProcess/casesSearch')
@@ -30,7 +30,7 @@ const processNavigation: FC = () => {
         {
           navigationList.map((item)=>{
             return (
-              <div className={selectItem===1?styles.itemSelect:styles.itemNoSelect} onClick={()=>navigation(item.id)}>
+              <div key={item.id} className={selectItem===1?styles.itemSelect:styles.itemNoSelect} onClick={()=>navigation(item.id)}>
                 <div className={styles.title}><span>{item.name}</span></div>
                 <div className={styles.iconWrapper}>
                   {selectItem===0&&<img src={item.iconNoSelect} style={{width:'60%',height:'100%'}}/>}

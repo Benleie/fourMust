@@ -40,15 +40,15 @@ const CommonModel: CommonModelType = {
   },
   subscriptions: {
     setup({ dispatch, history }) {
-      /* const rootNode: HTMLElement =  document.getElementById('root') as HTMLElement
-      rootNode.style.height = `${window.screen.height}px`
-      return history.listen(({ pathname }) => {
-        // if (pathname === '/') {
-        //   dispatch({
-        //     type: 'query',
-        //   })
-        // }
-      }); */
+      // const rootNode: HTMLElement =  document.getElementById('root') as HTMLElement
+      // rootNode.style.height = `${window.screen.height}px`
+      // return history.listen(({ pathname }) => {
+      //   // if (pathname === '/') {
+      //   //   dispatch({
+      //   //     type: 'query',
+      //   //   })
+      //   // }
+      // });
     }
   }
 };

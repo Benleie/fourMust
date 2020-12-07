@@ -1,0 +1,110 @@
+@import '~@/less/variable.less';
+.personItemWrapper {
+    color: white;
+    .container{
+        width: 17.6rem;
+        height: 8.7rem;
+        .borderStyle();
+        margin-top: .5rem;
+        margin-left: -.3rem;
+        display: flex;
+        .person_left {
+            width: 4.1rem;
+            margin-left: .18rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+                width: 4.1rem;
+                height: 6.86rem;
+                margin-top: .44rem;
+                margin-bottom: .54rem;
+            }
+            button {
+                width: 1.0rem;
+                height: .36rem;
+                background: #009999;
+                border-radius: 2px;
+                border: none;
+                outline: none;
+            }
+        }
+        .person_right {
+            flex: auto;
+            &_item {
+                flex: auto;
+                padding-left: .3rem;
+                padding-right: .92rem;
+                padding-top: .5rem;
+                width: 100%;
+                &_title {
+                    color: #2EFFFF;
+                    font-size: .2rem;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+
+                    img {
+                        width: .34rem;
+                        height: .26rem;
+                        margin-right: .12rem;
+                    }
+                    div {
+                        margin-left: .08rem;
+                        flex: auto;
+                        height: 1px;
+                        background-image: linear-gradient( to right, rgba(18, 232, 251, 1), rgba(18, 232, 251, 0));
+                    }
+                }
+                &_content {
+                    width: 100%;
+                    display: flex;
+                    margin-top: .2rem;
+                    margin-left: .45rem;
+                    color: #FEFFFF;
+                    font-size: .16rem;
+                    font-weight: bold;
+                    img {
+                        width: .94rem;
+                        height:.93rem;
+                        background: #12213E;
+                        border: 1px solid #00CCFF;
+                        margin-right: .1rem;
+                    }
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                    }
+                    &_name {
+                        font-size: .18rem;
+                    }
+                    &_register {
+                        margin-left: 1.27rem;
+                        font-size: .18rem;
+                    }
+                    &_live {
+                        margin-left: 1.97rem;
+                        font-size: .18rem;
+                    }
+                    &_item {
+                        flex: 1;
+                        span {
+                            color: white;
+                            font-weight: normal;
+                        }
+                        :first-child {
+                            font-weight: bold;
+                            color: #FEFFFF;
+                        }
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

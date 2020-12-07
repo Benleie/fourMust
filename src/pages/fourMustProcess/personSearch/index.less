@@ -1,5 +1,138 @@
+@import '~@/less/variable.less';
 .personSearchWrapper{
-  width: 100%;
-  height: 100%;
   color: white;
+  .person_img {
+    width: 9rem;
+    height: 8rem;
+    position: absolute;
+    left: -.8rem;
+    top: -.5rem;
+    .imgImport('~@/assets/fourMustProcess/earth.png');
+    &_content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 4rem;
+      height: 2rem;
+      margin-left: 2.2rem;
+      margin-top: 3rem;
+      .imgImport('~@/assets/fourMustProcess/titleBorder.png');
+      line-height: 100%;
+      font-size: .55rem;
+      color: @fontColor;
+      font-weight: bold;
+      img {
+        width: .6rem;
+        margin-right: .14rem;
+      }
+    }
+  }
+  .person_container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    .person_left {
+      width: 12.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-top: .5rem;
+      &_top {
+        width: 5rem;
+        height: 2.64rem;
+        .borderStyle();
+        margin-bottom: .29rem;
+        &_one,&_two {
+          display: flex;
+          margin-left: .36rem;
+          color: #F8CD46;
+          font-size: .44rem;
+          div {
+            .imgImport('~@/assets/fourMustProcess/numBorder.jpg');
+            width: .48rem;
+            height: .56rem;
+            margin: 0.05rem 0.04rem;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+          }
+        }
+        &_two {
+          color: #00EAFF;
+        }
+      }
+      &_center {
+        width: 5rem;
+        height: 2.64rem;
+        .borderStyle();
+        margin-bottom: .29rem;
+        &_chart {
+          width: 100%;
+          height: 2.6rem;
+          margin-top: -.2rem;
+        }
+      }
+      &_bottom {
+        width: 100%;
+        height: 3.14rem;
+        .borderStyle();
+        &_chart {
+          width: 100%;
+          height: 2.6rem;
+          margin-top: -.2rem;
+        }
+      }
+    }
+    .person_right {
+      width: 4rem;
+      height: 9rem;
+      .borderStyle();
+      margin-left: .26rem;
+      margin-top: .5rem;
+      &_item {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: .24rem;
+        &_name {
+          margin-right: .1rem;
+          font-size: .18rem;
+        }
+        &_num {
+          margin-left: .2rem;
+          margin-right: .3rem;
+          color: #FFC000;
+          font-size: .14rem;
+        }
+      }
+    }
+  }
+  .person_title {
+    display: flex;
+    font-size: .2rem;
+    color: @fontColor;
+    margin-top: .26rem;
+    margin-left: .36rem;
+    img {
+      width: .27rem;
+      height: .3rem;
+      margin-right: 0.06rem;
+    }
+  }
+  :global(.ant-progress) {
+    width: 1.8rem;
+    height: 0.08rem;
+  }
+  :global(.ant-progress-outer) {
+    width: 1.8rem;
+    height: 0.08rem;
+  }
+  :global(.ant-progress-inner) {
+    width: 1.8rem;
+    background-color: #132849;
+  }
+  :global(.ant-progress-bg) {
+    width: 1.8rem;
+    background-color:#00FFFF;
+  }
+  
 }

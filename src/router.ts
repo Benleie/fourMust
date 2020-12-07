@@ -36,34 +36,22 @@ const router = [
             path: '/fourMustProcess/runEscape', 
             component: '@/pages/fourMustProcess/runEscape', 
             exact: true 
-          }
+          },
+          {
+            path: '/fourMustProcess/casesItem', 
+            component: '@/pages/fourMustProcess/casesItem', 
+            exact: true 
+          },
+          {
+            path: '/fourMustProcess/personItem', 
+            component: '@/pages/fourMustProcess/personItem', 
+            exact: true 
+          },
         ]
       },
       { 
         path: '/fourMustModel', 
-        component: '@/pages/fourMustModel/index',
-        routes: [
-          {
-            path: '/fourMustModel/cases', 
-            component: '@/pages/fourMustModel/cases', 
-            exact: true 
-          },
-        ], 
-      },
-      // 嵌套路由 需要修改
-      { 
-        path: '/cases', 
-        component: '@/pages/fourMustModel/cases', 
-        exact: true 
-      },
-      { 
-        path: '/portrait', 
-        component: '@/pages/fourMustModel/portrait', 
-        exact: true 
-      },
-      { 
-        path: '/people', 
-        component: '@/pages/fourMustModel/people', 
+        component: '@/pages/fourMustModel', 
         exact: true 
       },
       { 

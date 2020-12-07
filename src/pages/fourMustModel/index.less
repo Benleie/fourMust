@@ -1,66 +1,9 @@
-@import '~@/less/variable.less';
+@import '../../less/variable.less';
 
 .fourMustModelWrapper{
   width: 100%;
   height: 100%;
-  .imgImport('~@/assets/fourMustmodel/1/background.png');
+  .imgImport('../assets/fourMustProcess/background.png');
   color: aliceblue;
-  padding-top: 83px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  header {
-    h2 {
-      color: #2EFFFF;
-    }
-    input {
-      background: #102445;
-      margin-left: -20px;
-      padding: 4px 0 4px 20px;
-      color: #9EA6AF;
-      border: 1px solid #00FFFF;
-    }
-    
-  }
-  main{
-    margin-top: 90px;
-    position: relative;
-    .absoluteBox {
-      position: absolute;
-      width: 18px;
-      height: 20px;
-      left: -260px;
-      top: 50px;
-      // right: 100px;
-      img {
-        width: 100%;
-      }
-    }
-    .mainBox{
-      display: flex;
-    }
-  };
-  footer{
-    margin-top: 150px;
-    display: flex;
-  }
-}
-
-.processWrapper{
-  width: 100%;
-  height: 100%;
-  position: relative;
-  .childPages{
-    float: left;
-    width: 93%;
-    height: 100%;
-    position: relative;
-    .childPageContainer{
-      position: absolute;
-      width: 96%;
-      height: 90%;
-      bottom: 2%;
-      right: 2%;
-    }
-  }
+  
 }

@@ -12,7 +12,7 @@ const CasesSpy: FC<PageProps> =(props) =>{
   return(
     <div className={styles.casesSpyWrapper}>
       casesSpy
-
+2
     </div>
   )
 };
