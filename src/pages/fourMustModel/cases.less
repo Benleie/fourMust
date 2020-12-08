@@ -70,8 +70,9 @@
     .mainBox{
       display: flex;
       flex-wrap: wrap;
-      // align-content: space-between;
-      width: 12rem;
+      // (200 + 86) * 4
+      width: 11.5rem;
+      margin-left: .86rem;
       section {
         margin-right: .86rem;
         margin-bottom: .76rem;
@@ -95,7 +96,7 @@
     .mainCases {
       display: flex;
       section {
-        margin: 0 .43rem .20rem 0;
+        + section { margin-left: .86rem;  }
         width: 2rem;
         // display: flex;
         // flex-direction: column;
@@ -118,7 +119,7 @@
     }
   };
   footer{
-    margin-top: 1.65rem;
+    margin-top: 2.65rem;
     display: flex;
     justify-content: space-around;
     div{
