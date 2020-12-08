@@ -17,9 +17,16 @@ const fourMustModel: FC<PageProps> =(props) =>{
     <div className={styles.fourMustModelWrapper}>
       <header>
         <h2>人员相关模型</h2>
-        <div>
+        {/* <div>
           <Search placeholder="请输入模型名称" enterButton/>
+        </div> */}
+        <div>
+          <input type="text" placeholder="请输入模型名称" />
+          <div>
+            <img src={require('@/assets/fourMustModel/search.png')} alt=""/>
+          </div>
         </div>
+        
       </header>
       <main className={styles.to} style={{ marginTop: '.92rem' }}>
         <div className={styles.mainBox}>

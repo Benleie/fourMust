@@ -138,12 +138,12 @@
       }
       return val;
     };
-  })(window, (window as any)['lib'] || ((window as any)['lib'] = {}));
+})(window, (window as any)['lib'] || ((window as any)['lib'] = {}));
   
 
 
 // (() => {
-//   const width = window.screen.width;
-//   const rem = width / 19.2 ;
+//   const height = document.documentElement.clientHeight
+//   const rem = height / 10.8;
 //   document.documentElement.style.fontSize = `${rem}px`;
 // })()

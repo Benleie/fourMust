@@ -16,7 +16,7 @@ const ModelCases: FC<PageProps> =(props) =>{
         <aside>
           <h1>全息刻画</h1>
           <div>
-            <input type="text" placeholder="请输入模型名称" />
+            <input type="text" placeholder="请输入身份证号" />
             <div>
               <img src={require('@/assets/fourMustModel/search.png')} alt=""/>
             </div>
@@ -82,7 +82,7 @@ const ModelCases: FC<PageProps> =(props) =>{
             <div className={styles.showBox}>
               <div>
                 <img src={require('@/assets/fourMustModel/3/4_1.png')} alt=""/>
-                <span>模型名臣</span>
+                <span>模型名称</span>
               </div>
               
             </div>
