@@ -87,7 +87,7 @@ const fourMustModel: FC<PageProps> =(props) =>{
           <img src={require("@/assets/fourMustmodel/2/arrowRight.png")}/>
         </div>
       </main>
-      <footer style={{ marginTop: '.86rem' }}>
+      <footer style={{ marginTop: '.16rem' }}>
         <div>
           <img src={require("@/assets/fourMustmodel/1/portrait1.png")}/>
         </div>
