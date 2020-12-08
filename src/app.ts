@@ -1,3 +1,4 @@
+
 (function(win: any, lib) {
     let 
      doc: any = win.document,
@@ -78,8 +79,10 @@
     }
   
     function refreshRem() {
-      var width = window.screen.width;
-      var rem = width / 19.2;
+      // var width = window.screen.width;
+      // var rem = width / 19.2;
+      var height = document.documentElement.clientHeight
+      var rem = height / 10.8;
       docEl.style.fontSize = rem + "px";
       flexible.rem = win.rem = rem;
       console.log(rem);
@@ -137,3 +140,10 @@
     };
   })(window, (window as any)['lib'] || ((window as any)['lib'] = {}));
   
+
+
+// (() => {
+//   const width = window.screen.width;
+//   const rem = width / 19.2 ;
+//   document.documentElement.style.fontSize = `${rem}px`;
+// })()

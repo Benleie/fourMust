@@ -17,7 +17,11 @@ const ModelCases: FC<PageProps> =(props) =>{
           <h1>全息刻画</h1>
           <div>
             <input type="text" placeholder="请输入模型名称" />
+            <div>
+              <img src={require('@/assets/fourMustModel/search.png')} alt=""/>
+            </div>
           </div>
+          
           <section>
             <div className={styles.figure}>
               <img src={require('@/assets/fourMustModel/3/3d_portrait.png')} alt=""/>

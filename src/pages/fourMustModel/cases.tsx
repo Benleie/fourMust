@@ -24,10 +24,11 @@ const fourMustModel: FC<PageProps> =(props) =>{
         </div>
       </header>
       <main>
-        <div className={styles.mainBox}>
-          <div className={styles.absoluteBox}>
+          <div className={`${styles.absoluteBox} ${styles.left}`}>
             <img src={require("@/assets/fourMustmodel/1/arrowLeft.png")}/>
           </div>
+
+        <div className={styles.mainCases}>
           <section>
             <div>
               <img src={require("@/assets/fourMustmodel/1/model1.png")}/>

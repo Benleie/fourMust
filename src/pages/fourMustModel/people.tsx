@@ -21,7 +21,7 @@ const fourMustModel: FC<PageProps> =(props) =>{
           <Search placeholder="请输入模型名称" enterButton/>
         </div>
       </header>
-      <main>
+      <main className={styles.to} style={{ marginTop: '.92rem' }}>
         <div className={styles.mainBox}>
           <section>
             <div>
@@ -47,9 +47,6 @@ const fourMustModel: FC<PageProps> =(props) =>{
             </div>
             <div>境外赌博模型</div>
           </section>
-        </div>
-        
-        <div className={styles.mainBox}>
           <section>
             <div>
               <img src={require("@/assets/fourMustmodel/2/5.png")}/>
@@ -74,12 +71,16 @@ const fourMustModel: FC<PageProps> =(props) =>{
             </div>
             <div>关注人员人脸管控模型</div>
           </section>
+        
         </div>
+        
+        {/* <div className={styles.mainBox}>
+        </div> */}
         <div className={`${styles.absoluteBox} ${styles.right}`}>
           <img src={require("@/assets/fourMustmodel/2/arrowRight.png")}/>
         </div>
       </main>
-      <footer>
+      <footer style={{ marginTop: '.86rem' }}>
         <div>
           <img src={require("@/assets/fourMustmodel/1/portrait1.png")}/>
         </div>

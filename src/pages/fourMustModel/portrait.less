@@ -5,38 +5,72 @@
   height: 100%;
   .imgImport('~@/assets/fourMustmodel/1/background.png');
   color: aliceblue;
-  padding-top: 83px;
+  padding-top: 1.01rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   .container {
-    width: 1803px;
-    height: 500px;
+    width: 18rem;
+    height: 9.25rem;
     display: flex;
     justify-content: space-around;
     .imgImport('~@/assets/fourMustmodel/3/border.png');
     aside {
-      width: 240px;
-      text-align: center;
+      width: 4.8rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       h1 {
         color: #2EFFFF;
+        font-size: .5rem;
+        line-height: .5rem;
+        margin-top: .85rem;
+        margin-bottom: .34rem;
       }
       input {
+        display: inline-block;
         background: #102445;
+        width: 3.18rem;
+        height: .43rem;
         margin-left: -20px;
         padding: 4px 0 4px 20px;
+        vertical-align: middle;
         color: #9EA6AF;
         border: 1px solid #00FFFF;
+        + div{
+          display: inline-block;
+          width: .43rem;
+          height: .43rem;
+          border: 1px solid #00FFFF;
+          border-left: none;
+          text-align: center;
+          vertical-align: middle;
+          cursor: pointer;
+          img {
+            width: .2rem;
+            height: .22rem;
+            // vertical-align: middle;
+          }
+        }
       }
-      .figure > img {
-        width: 239.5px;
-        border: @imgBorder;
+      .figure {
+        margin-top: .52rem;
+        margin-bottom: .48rem;
+        > img {
+          width: 4.8rem;
+          border: @imgBorder;
+        }
       }
       button {
         background-color: #009999;
+        width: 1rem;
+        height: .36rem;
+        border-radius: 2px;
+        font-size: .16rem;
       }
     }
     main {
+      margin-top: .91rem;
       .article1 {
         .imgImport('~@/assets/fourMustmodel/3/title1.png');
       }
@@ -50,16 +84,30 @@
         .imgImport('~@/assets/fourMustmodel/3/title4.png');
       }
       article {
-        width: 1002px;
-        height: 100px;
+        width: 10rem;
+        height: 1.54rem;
         box-sizing: border-box;
         border: @imgBorder;
-        margin-top: 10px;
+        margin-bottom: .16rem;
         .showBox {
-          padding-top: 50px;
+          margin-top: .34rem;
+          height: 1.2rem;
           display: flex;
+          align-items: center;
           div {
-            margin: 0 30px 0 20px;
+            margin: 0 .48rem 0 .45rem;
+
+            img { 
+              width: .5rem;
+              height: .5rem;
+              border: 1px solid #00FFFF;
+              border-radius: 50%;
+            }
+            span {
+              margin-left: .2rem;
+              font-size: .2rem;
+              vertical-align: middle;
+            }
           }
         }
       }
