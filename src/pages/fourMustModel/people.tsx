@@ -28,7 +28,7 @@ const fourMustModel: FC<PageProps> =(props) =>{
         </div>
         
       </header>
-      <main className={styles.to} style={{ marginTop: '.92rem' }}>
+      <main style={{ marginTop: '.92rem' }}>
         <div className={styles.mainBox}>
           <section>
             <div>
@@ -80,9 +80,6 @@ const fourMustModel: FC<PageProps> =(props) =>{
           </section>
         
         </div>
-        
-        {/* <div className={styles.mainBox}>
-        </div> */}
         <div className={`${styles.absoluteBox} ${styles.right}`}>
           <img src={require("@/assets/fourMustmodel/2/arrowRight.png")}/>
         </div>
